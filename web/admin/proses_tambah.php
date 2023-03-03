@@ -5,9 +5,10 @@ include 'koneksi.php';
 	// membuat variabel untuk menampung data dari form
   $nis    = $_POST['nis'];
   $foto = $_FILES['foto']['name'];
-  $nama    = $_POST['nama'];
+  $nama  = $_POST['nama'];
   $kelas= $_POST['kelas'];
   $alamat = $_POST['alamat'];
+ 
 
 //cek dulu jika ada gambar produk jalankan coding ini
 if($foto != "") {
@@ -18,9 +19,9 @@ if($foto != "") {
   $angka_acak     = rand(1,999);
   $nama_foto_baru = $angka_acak.'-'.$foto; //menggabungkan angka acak dengan nama file sebenarnya
         if(in_array($ekstensi, $ekstensi_diperbolehkan) === true)  {     
-                move_uploaded_file($file_tmp, 'images/'.$nama_foto_baru); //memindah file gambar ke folder gambar
+                move_uploaded_file($file_tmp, 'imgStudent/'.$nama_foto_baru); //memindah file gambar ke folder gambar
                   // jalankan query INSERT untuk menambah data ke database pastikan sesuai urutan (id tidak perlu karena dibikin otomatis)
-                  $query = "INSERT INTO siswax ( nis, foto, nama, kelas, alamat) VALUES ('$nis', '$foto', '$nama', '$kelas', '$alamat')";
+                  $query = "INSERT INTO siswax ( nis, foto, nama, kelas, alamat) VALUES ('$nis', '$nama_foto_baru', '$nama', '$kelas', '$alamat')";
                   $result = mysqli_query($koneksi, $query);
                   // periska query apakah ada error
                   if(!$result){

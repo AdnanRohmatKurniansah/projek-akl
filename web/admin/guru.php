@@ -142,7 +142,7 @@
     ?>
        <tr>
           <td><?php echo $no; ?></td>
-          <td style="text-align: center;"><img src="images/<?php echo $data['foto']; ?>" style="width: 100px; height: 100px;"></td>
+          <td style="text-align: center;"><img src="imgGuru/<?php echo $data['foto']; ?>" style="width: 100px; height: 100px;"></td>
           <td><?php echo $data['nama']; ?></td>
           <td><?php echo $data['nohp']; ?></td>
           <td><textarea style="width: 100%; height: 100px; border-left: none; border-right: none; border-top: none; border-bottom: none; outline: none; resize: none;" name="alamat" disabled><?php echo $data['alamat']; ?></textarea></td>

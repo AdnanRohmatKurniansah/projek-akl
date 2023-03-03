@@ -17,10 +17,10 @@ include 'koneksi.php';
     $angka_acak     = rand(1,999);
     $nama_foto_baru= $angka_acak.'-'.$foto; //menggabungkan angka acak dengan nama file sebenarnya
     if(in_array($ekstensi, $ekstensi_diperbolehkan) === true)  {
-                  move_uploaded_file($file_tmp, 'imgpres/'.$nama_foto_baru); //memindah file gambar ke folder gambar
+                  move_uploaded_file($file_tmp, 'imgPrestasi/'.$nama_foto_baru); //memindah file gambar ke folder gambar
                       
                     // jalankan query UPDATE berdasarkan ID yang produknya kita edit
-                   $query  = "UPDATE prestasi SET foto = '$foto', nama_prestasi = '$nama_prestasi', juara = '$juara', tahun = '$tahun'";
+                   $query  = "UPDATE prestasi SET foto = '$nama_foto_baru', nama_prestasi = '$nama_prestasi', juara = '$juara', tahun = '$tahun'";
                     $query .= "WHERE id = '$id'";
                     $result = mysqli_query($koneksi, $query);
                     // periska query apakah ada error

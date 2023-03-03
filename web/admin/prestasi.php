@@ -142,7 +142,7 @@
       
        <tr>
           <td><?php echo $no; ?></td>
-          <td style="text-align: center;"><img src="imgpres/<?php echo $data['foto']; ?>" style="width: 100px; height: 100px;"></td>
+          <td style="text-align: center;"><img src="imgPrestasi/<?php echo $data['foto']; ?>" style="width: 100px; height: 100px;"></td>
           <td><textarea style="width: 100%; height: 100px; border-left: none; border-right: none; border-top: none; border-bottom: none; outline: none; resize: none;" name="nama_prestasi" disabled><?php echo $data['nama_prestasi']; ?></textarea></td>
           <td><?php echo $data['juara']; ?></td>
           <td><?php echo $data['tahun']; ?></td>

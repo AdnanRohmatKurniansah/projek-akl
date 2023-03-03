@@ -89,7 +89,7 @@ include 'koneksi.php';
         </div>
         <div>
           <label>Foto</label>
-          <img src="gambar/<?php echo $data['nama_file']; ?>" style="width: 80px;float: left;margin-bottom: 5px;">
+          <img src="imgGaleri/<?php echo $data['nama_file']; ?>" style="width: 80px;float: left;margin-bottom: 5px;">
           <input type="file" name="nama_file" />
           <i style="font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
         </div>

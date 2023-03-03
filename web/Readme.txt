@@ -1,4 +1,4 @@
-Buat database crud_gc
+Buat database akuntansi
 
 
 username = admin

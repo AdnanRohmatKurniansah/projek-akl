@@ -143,7 +143,7 @@
       
        <tr>
           <td><?php echo $no; ?></td>
-          <td style="text-align: center;"><img src="images/<?php echo $data['foto']; ?>" style="width: 100px; height: 100px;"></td>
+          <td style="text-align: center;"><img src="imgStudent/<?php echo $data['foto']; ?>" style="width: 100px; height: 100px;"></td>
           <td><?php echo $data['nis']; ?></td>
           <td><?php echo $data['nama']; ?></td>
           <td><?php echo $data['kelas']; ?></td>

@@ -79,7 +79,7 @@
   </nav>
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
   <?php
-  include('koneksi.php');
+  include('admin/koneksi.php');
  //agar index terhubung dengan database, maka koneksi sebagai penghubung harus di include
 ?>
 
@@ -176,7 +176,7 @@
       
        <tr>
           <td><?php echo $no; ?></td>
-          <td style="text-align: center;"><img src="admin/images/<?php echo $data['foto']; ?>" style="width: 80px;"></td>
+          <td style="text-align: center;"><img src="admin/imgStudent/<?php echo $data['foto']; ?>" style="width: 80px;"></td>
           <td><?php echo $data['nis']; ?></td>
           <td><?php echo $data['nama']; ?></td>
           <td><?php echo $data['kelas']; ?></td>

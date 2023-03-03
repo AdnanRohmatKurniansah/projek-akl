@@ -11,7 +11,7 @@ else{
 // For adding post  
 if(isset($_POST['submit']))
 {
-$posttitle=$_POST['posttitle'];
+$posttitle=$_POST['posttitle']; 
 $catid=$_POST['category'];
 $subcatid=$_POST['subcategory'];
 $postdetails=$_POST['postdescription'];

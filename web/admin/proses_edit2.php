@@ -18,10 +18,10 @@ include 'koneksi.php';
     $angka_acak     = rand(1,999);
     $nama_foto_baru= $angka_acak.'-'.$foto; //menggabungkan angka acak dengan nama file sebenarnya
     if(in_array($ekstensi, $ekstensi_diperbolehkan) === true)  {
-                  move_uploaded_file($file_tmp, 'images/'.$nama_foto_baru); //memindah file gambar ke folder gambar
+                  move_uploaded_file($file_tmp, 'imgStudent/'.$nama_foto_baru); //memindah file gambar ke folder gambar
                       
                     // jalankan query UPDATE berdasarkan ID yang produknya kita edit
-                   $query  = "UPDATE siswaxii SET nis = '$nis', foto = '$foto', nama = '$nama', kelas = '$kelas', alamat = '$alamat'";
+                   $query  = "UPDATE siswaxii SET nis = '$nis', foto = '$nama_foto_baru', nama = '$nama', kelas = '$kelas', alamat = '$alamat'";
                     $query .= "WHERE id = '$id'";
                     $result = mysqli_query($koneksi, $query);
                     // periska query apakah ada error

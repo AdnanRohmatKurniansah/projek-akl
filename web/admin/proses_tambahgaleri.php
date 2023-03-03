@@ -15,9 +15,9 @@ if($nama_file != "") {
   $angka_acak     = rand(1,999);
   $nama_file_baru = $angka_acak.'-'.$nama_file; //menggabungkan angka acak dengan nama file sebenarnya
         if(in_array($ekstensi, $ekstensi_diperbolehkan) === true)  {     
-                move_uploaded_file($file_tmp, 'gambar/'.$nama_file_baru); //memindah file gambar ke folder gambar
+                move_uploaded_file($file_tmp, 'imgGaleri/'.$nama_file_baru); //memindah file gambar ke folder gambar
                   // jalankan query INSERT untuk menambah data ke database pastikan sesuai urutan (id tidak perlu karena dibikin otomatis)
-                  $query = "INSERT INTO gambar ( judul, nama_file) VALUES ('$judul', '$nama_file')";
+                  $query = "INSERT INTO gambar ( judul, nama_file) VALUES ('$judul', '$nama_file_baru')";
                   $result = mysqli_query($koneksi, $query);
                   // periska query apakah ada error
                   if(!$result){

@@ -138,7 +138,7 @@
        <tr>
           <td><?php echo $no; ?></td>
           <td><?php echo $row['judul']; ?></td>
-          <td style="text-align: center;"><img src="gambar/<?php echo $row['nama_file']; ?>" style="width: 80px;"></td>
+          <td style="text-align: center;"><img src="imgGaleri/<?php echo $row['nama_file']; ?>" style="width: 80px;"></td>
           <td>
               <a href="editgaleri.php?id=<?php echo $row['id']; ?>" style="background-color: green; color: #fff;
           padding: 10px; text-decoration: none; font-size: 12px;">Edit</a> |

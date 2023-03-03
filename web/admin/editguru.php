@@ -88,9 +88,9 @@ include 'koneksi.php';
         <input name="id" value="<?php echo $data['id']; ?>"  hidden />
         <div>
           <label>Foto</label>
-          <img src="images/<?php echo $data['foto']; ?>" style="width: 80px;float: left;margin-bottom: 5px;">
+          <img src="imgGuru/<?php echo $data['foto']; ?>" style="width: 80px;float: left;margin-bottom: 5px;">
           <input type="file" name="foto" />
-          <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah gambar produk</i>
+          <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
         </div>
         <div>
           <label>Nama</label>

@@ -121,7 +121,7 @@ h3 {
       <div class="isi">
         <?php
         //Menyertakan file konfigurasi database
-        include('koneksi.php');
+        include('admin/koneksi.php');
 
       $query = "SELECT * FROM gambar ORDER BY id ASC";
       $result = mysqli_query($koneksi, $query);
@@ -138,8 +138,8 @@ h3 {
       while($row = mysqli_fetch_assoc($result))
       {
         ?>
-            <a href="admin/gambar/<?php echo $row['nama_file']; ?>"  data-fancybox="group" data-caption="<?php echo $row["judul"]; ?>" >
-            <img src="admin/gambar/<?php echo $row['nama_file']; ?>" style="height: 200px;">
+            <a href="admin/imgGaleri/<?php echo $row['nama_file']; ?>"  data-fancybox="group" data-caption="<?php echo $row["judul"]; ?>" >
+            <img src="admin/imgGaleri/<?php echo $row['nama_file']; ?>" style="height: 200px;">
             </a>
         <?php }
          ?>
