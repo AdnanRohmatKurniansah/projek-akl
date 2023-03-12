@@ -50,6 +50,5 @@ if($foto != "") {
                     echo "<script>alert('Data berhasil ditambah.');window.location='siswax.php';</script>";
                   }
 }
-
- 
+?>
 

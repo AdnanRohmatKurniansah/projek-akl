@@ -14,3 +14,4 @@ $id = $_GET["id"];
     } else {
       echo "<script>alert('Data berhasil dihapus.');window.location='siswaxi.php';</script>";
     }
+    ?>

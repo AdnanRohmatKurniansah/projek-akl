@@ -107,7 +107,7 @@
     <center><h1>Message</h1><center>
   <div class="add">
     <br>
-    <form method="POST" class="d-flex" role="search" style="width: 50%; ali">
+    <form method="POST" class="d-flex" role="search" style="width: 50%; ">
         <input  type="text"  name="t_cari" value="<?= @$_POST['t_cari'] ?>"  class="form-control me-2" placeholder="Masukkan Nama Pengirim">
         <button class="btn btn-primary" name="b_cari" type="submit">Cari</button>
         <button class="btn btn-danger" name="b_reset" type="submit">Reset</button>

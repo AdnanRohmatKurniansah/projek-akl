@@ -69,7 +69,7 @@ echo "<script>alert('User not registered with us');</script>";
                         <div class="wrapper-page">
 
                             <div class="m-t-40 account-pages">
-                                <div class="text-center account-logo-box">
+                                <div class="text-c  enter account-logo-box">
                                     <h2 class="text-uppercase">
                                         <a href="#" class="text-success">
                                             <span style="color: white;"><b>LOGIN<b></span>
